@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{26dba551-920b-4b07-917d-3134a4c473ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JsonCpp">
+      <UniqueIdentifier>{d3bc599c-a64f-499d-a871-64c589ea6cce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JsonCpp\stdafx.cpp">
+      <Filter>JsonCpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\JsonCpp\autolink.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\config.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\features.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\forwards.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\json.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\json_batchallocator.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\reader.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\stdafx.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\value.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JsonCpp\writer.h">
+      <Filter>JsonCpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\JsonCpp\json_internalarray.inl">
+      <Filter>JsonCpp</Filter>
+    </None>
+    <None Include="..\..\JsonCpp\json_internalmap.inl">
+      <Filter>JsonCpp</Filter>
+    </None>
+    <None Include="..\..\JsonCpp\json_valueiterator.inl">
+      <Filter>JsonCpp</Filter>
+    </None>
+    <None Include="..\..\README.md">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -29,7 +29,8 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -89,13 +90,15 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -149,25 +152,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\JsonCpp\stdafx.cpp" />
+    <ClCompile Include="JsonCppDemo.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\JsonCpp\autolink.h" />
-    <ClInclude Include="..\..\JsonCpp\config.h" />
-    <ClInclude Include="..\..\JsonCpp\features.h" />
-    <ClInclude Include="..\..\JsonCpp\forwards.h" />
-    <ClInclude Include="..\..\JsonCpp\json.h" />
-    <ClInclude Include="..\..\JsonCpp\json_batchallocator.h" />
-    <ClInclude Include="..\..\JsonCpp\reader.h" />
-    <ClInclude Include="..\..\JsonCpp\stdafx.h" />
-    <ClInclude Include="..\..\JsonCpp\value.h" />
-    <ClInclude Include="..\..\JsonCpp\writer.h" />
+    <ClInclude Include="JsonCppDemo.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\JsonCpp\json_internalarray.inl" />
-    <None Include="..\..\JsonCpp\json_internalmap.inl" />
-    <None Include="..\..\JsonCpp\json_valueiterator.inl" />
     <None Include="..\..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
